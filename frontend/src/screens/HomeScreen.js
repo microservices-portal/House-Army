@@ -19,7 +19,7 @@ function HomeScreen() {
   console.log("products",products);
   return (
     <div>
-        <h1>Latest Products</h1>
+        <h1>Saloon services</h1>
         {loading ? <Loader/>
             : (error ? <Message variant='danger'>{error}</Message>
             :
@@ -32,6 +32,7 @@ function HomeScreen() {
            </Row>)
          }
 
+   
 {/* {loading ? <p>Loading</p>
                 : error ? <p>{error}</p>
                     :
