@@ -34,14 +34,14 @@ function CartScreen({ match, location, history }) {
                 <h1>Shopping Cart</h1>
                 {cartItems.length === 0 ? (
                     <Message variant='info'>
-                        Your cart is empty <Link to='/'>Go Back</Link>
+                        Your cart is empty!  <Link to='/'>Go Back</Link>
                     </Message>
                 ) : (
                         <ListGroup variant='flush'>
                             {cartItems.map(item => (
                                 <ListGroup.Item key={item.product}>
                                     <Row>
-                                        <Col md={2}>
+                                        <Col md={2} >
                                             <Image src={item.image} alt={item.name} fluid rounded />
                                         </Col>
                                         <Col md={3}>
