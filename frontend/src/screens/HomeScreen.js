@@ -1,5 +1,5 @@
-/* eslint-disable no-unused-vars */
-import React, {useState,useEffect } from 'react'
+
+import React, {useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
@@ -19,7 +19,7 @@ function HomeScreen() {
   console.log("products",products);
   return (
     <div>
-        <h1>Services</h1>
+        <h1>Services on Demand</h1>
         {loading ? <Loader/>
             : (error ? <Message variant='danger'>{error}</Message>
             :

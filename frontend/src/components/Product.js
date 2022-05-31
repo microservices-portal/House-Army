@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 function Product({product}) {
   return (
-    <Card className="my-3 p-3 rounded">
+    <Card className="my-3 p-3 rounded" style={{width:'36vh' , height:'56vh'}}>
        
        <Link to={`/product/${product._id}`}>
-           <Card.Img src={product.image}/>
+           <Card.Img  style={{width:'32vh' , height:'30vh'}} src={product.image}/>
 
        </Link>
 
@@ -25,7 +25,7 @@ function Product({product}) {
            </Card.Text>
 
            <Card.Text as="h3">
-                Rs {product.price}
+           ₹{product.price}
            </Card.Text>
        </Card.Body>
     </Card>

@@ -31,7 +31,7 @@ function CartScreen({ match, location, history }) {
     return (
         <Row>
             <Col md={8}>
-                <h1>Shopping Cart</h1>
+                <h1>Your Selected Services</h1>
                 {cartItems.length === 0 ? (
                     <Message variant='info'>
                         Your cart is empty!  <Link to='/'>Go Back</Link>
@@ -49,7 +49,7 @@ function CartScreen({ match, location, history }) {
                                         </Col>
 
                                         <Col md={2}>
-                                            Rs{item.price}
+                                        ₹{item.price}
                                         </Col>
 
                                         <Col md={3}>
@@ -91,7 +91,7 @@ function CartScreen({ match, location, history }) {
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) items</h2>
-                            Rs {cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
+                            ₹ {cartItems.reduce((acc, item) => acc + item.qty * item.price, 0).toFixed(2)}
                         </ListGroup.Item>
                     </ListGroup>
 

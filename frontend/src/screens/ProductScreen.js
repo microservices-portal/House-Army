@@ -72,7 +72,7 @@ function ProductScreen({ match, history }) {
                        <Row>
                          <Col>Status:</Col>
                          <Col>
-                            {product.countInStock > 0 ? 'In Stock': 'Out of Stock' }
+                            {product.countInStock > 0 ? 'Available✅': 'Not Available ❌' }
                          </Col>
                        </Row>
                      </ListGroup.Item>
@@ -107,7 +107,7 @@ function ProductScreen({ match, history }) {
 
                        <Button 
                        onClick={addToCartHandler}
-                       className='btn-block' disabled={product.countInStock===0} typr='button'>Add to Cart</Button>
+                       className='btn-block' disabled={product.countInStock===0} typr='button'>Book Now</Button>
                      </ListGroup.Item>
                   </ListGroup>
                 </Card>

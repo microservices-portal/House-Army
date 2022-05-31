@@ -18,9 +18,12 @@ function Header() {
   return (
     <header>
         <Navbar bg="light" variant="light" expand="lg" collapseOnSelect>
+        
   <Container>
     
-    <LinkContainer to={"/"} style={{textDecoration: "none"}}><Navbar.Brand >House Army</Navbar.Brand></LinkContainer>
+    <LinkContainer to={"/"} style={{textDecoration: "none"}}><Navbar.Brand > <img src={`https://graphicsfamily.com/wp-content/uploads/edd/2020/04/house-apartment-logo-blue-png-transparent.png`}
+                  style={{ height: '10vh', width: '5vw' }} alt="..." />
+                   <b>House<em>Army</em></b> </Navbar.Brand></LinkContainer>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
